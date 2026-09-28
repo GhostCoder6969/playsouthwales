@@ -6,7 +6,6 @@ export * from './components/SelectedDaySection';
 export * from './components/Cell';
 export * from './components/NavBar';
 export * from './utils/EventFilters';
-export * from './utils/playMarkerPop';
 export * from './utils/getLocalDateString';
 export * from './utils/dataProcessing';
 export * from './types/CellData';

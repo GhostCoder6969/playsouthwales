@@ -2,7 +2,6 @@ import React, { useEffect, useRef } from 'react';
 import * as THREE from 'three';
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js';
 import activeMarkerUrl from '@assets/ActiveMarker/activeMarker.glb?url';
-import { playMarkerPop } from '@calendar/utils/playMarkerPop';
 import { useSettings } from '@/context/SettingsContext';
 import { getParams } from '@calendar/utils/getParams';
 
@@ -202,7 +201,6 @@ const ActiveMarkerOverlay: React.FC<ActiveMarkerOverlayProps> = ({
                         base = target;
                         jumping = true;
                         jumpStart = now;
-                        playMarkerPop();
                     }
                 }
             }
@@ -235,7 +233,6 @@ const ActiveMarkerOverlay: React.FC<ActiveMarkerOverlayProps> = ({
                         queued = null;
                         jumping = true;
                         jumpStart = now;
-                        playMarkerPop();
                     }
                 }
             } else {
